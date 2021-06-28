@@ -1,0 +1,33 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "second project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatherinaFed/frontend-project-lvl2.git"
+  },
+  "author": "Ekaterina Fedoseeva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatherinaFed/frontend-project-lvl2/issues"
+  },
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
+  "type": "module",
+  "homepage": "https://github.com/KatherinaFed/frontend-project-lvl2#readme",
+  "dependencies": {
+    "commander": "^8.0.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4"
+  }
+}
