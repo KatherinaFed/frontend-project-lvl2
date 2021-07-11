@@ -1,10 +1,7 @@
 import _ from 'lodash';
 import fs from 'fs';
-import path from 'path';
-import process from 'process';
 
 const genDiff = (absoluteFile1, absoluteFile2) => {
-  
   const readFile1 = fs.readFileSync(absoluteFile1, 'utf-8');
   const readFile2 = fs.readFileSync(absoluteFile2, 'utf-8');
 
