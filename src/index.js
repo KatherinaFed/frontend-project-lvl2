@@ -1,12 +1,22 @@
 import _ from 'lodash';
 import fs from 'fs';
+import path from 'path';
+import parser from './parser.js';
 
-const genDiff = (absoluteFile1, absoluteFile2) => {
+const genDiff = (file1, file2) => {
+  const absoluteFile1 = path.resolve(process.cwd(), `__fixtures__/${file1}`);
+
+  const absoluteFile2 = path.resolve(process.cwd(), `__fixtures__/${file2}`);
+
+  const format1 = path.extname(absoluteFile1).slice(1);
+  const format2 = path.extname(absoluteFile2).slice(1);
+
   const readFile1 = fs.readFileSync(absoluteFile1, 'utf-8');
   const readFile2 = fs.readFileSync(absoluteFile2, 'utf-8');
 
-  const obj1 = JSON.parse(readFile1);
-  const obj2 = JSON.parse(readFile2);
+  // функция parser
+  const obj1 = parser(readFile1, format1);
+  const obj2 = parser(readFile2, format2);
 
   const k1 = Object.keys(obj1);
   const k2 = Object.keys(obj2);
