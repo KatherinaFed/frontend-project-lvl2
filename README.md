@@ -2,6 +2,6 @@
 
 ### How it works.
 
-<a href="https://asciinema.org/a/2rbh12SHNKgMLSVimV2lOOoxw" target="_blank"><img src="https://asciinema.org/a/2rbh12SHNKgMLSVimV2lOOoxw.svg" /></a> - Comparing JSON files.
+https://asciinema.org/a/2rbh12SHNKgMLSVimV2lOOoxw - Comparing JSON files.
 
-<a href="https://asciinema.org/a/XPcCDEcvBtwMvEDptynZHaq9W" target="_blank"><img src="https://asciinema.org/a/XPcCDEcvBtwMvEDptynZHaq9W.svg" /></a> - Comparing YML files.
+https://asciinema.org/a/2rbh12SHNKgMLSVimV2lOOoxw - Comparing YML files.
