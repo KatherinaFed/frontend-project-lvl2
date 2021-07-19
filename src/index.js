@@ -2,9 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import parser from './parser.js';
 import compare from './compareObjects.js';
-import style from './formatters/stylish.js';
+import format from './formatters/index.js';
 
-const genDiff = (file1, file2) => {
+const genDiff = (file1, file2, formatName = 'stylish') => {
   const absoluteFile1 = path.resolve(process.cwd(), `__fixtures__/${file1}`);
   const absoluteFile2 = path.resolve(process.cwd(), `__fixtures__/${file2}`);
 
@@ -19,7 +19,7 @@ const genDiff = (file1, file2) => {
 
   const getDiff = compare(obj1, obj2);
 
-  const showDiff = style(getDiff);
+  const showDiff = format(getDiff, formatName);
   return showDiff;
 };
 
