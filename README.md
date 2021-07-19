@@ -3,10 +3,8 @@
 
 ### Examples:
 
-https://asciinema.org/a/2rbh12SHNKgMLSVimV2lOOoxw - Comparing JSON files.
+https://asciinema.org/a/axo8l9UjByElDSlGUTuPDA1To - Comparing STYLISH (default) format (json/yml).
 
-https://asciinema.org/a/2rbh12SHNKgMLSVimV2lOOoxw - Comparing YML files.
+https://asciinema.org/a/xf3wlYALsF821X1gR1xXWdWYn - Comparing PLAIN format (json/yml).
 
-https://asciinema.org/a/2vKXqbeWXNN5dSWxDhRhWSrIF - Comparing nested files.
-
-https://asciinema.org/a/t6F68QCO2FAiDAlqxoqWUGbNl - Comparing plain files.
+https://asciinema.org/a/cgzgo5eW0JzPD8fdnJkRKiRRb - Comparing JSON format (json/yml).
