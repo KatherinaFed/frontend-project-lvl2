@@ -1,6 +1,6 @@
 import yml from 'js-yaml';
 
-const parser = (file, fileFormat) => {
+const getParse = (file, fileFormat) => {
   const mapParser = {
     json: JSON.parse,
     yml: yml.safeLoad,
@@ -12,4 +12,4 @@ const parser = (file, fileFormat) => {
   return format(file);
 };
 
-export default parser;
+export default getParse;
