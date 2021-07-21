@@ -31,8 +31,11 @@ const getPlain = (nodes) => {
     if (type === 'changed') {
       return `Property '${currPath}' was updated. From ${getValue(beforeValue)} to ${getValue(afterValue)}\n`;
     }
+    if (type === 'unchanged') {
+      return '';
+    }
 
-    return '';
+    throw new Error(`Unexpected type ${type}`);
   };
 
   return innerIter(nodes, '');
