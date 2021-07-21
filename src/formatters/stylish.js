@@ -43,8 +43,11 @@ const getStylish = (nodes) => {
     if (type === 'changed') {
       return `\n${indent}${deleted}${name}: ${stringify(beforeValue, space)}\n${indent}${added}${name}: ${stringify(afterValue, space)}`;
     }
-
-    return `\n${indentBraces}${name}: ${stringify(value, space)}`;
+    if (type === 'unchanged') {
+      return `\n${indentBraces}${name}: ${stringify(value, space)}`;
+    }
+    
+    throw new Error(`Unexpected type ${type}`);
   };
 
   return innerIter(nodes);
