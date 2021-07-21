@@ -46,7 +46,7 @@ const getStylish = (nodes) => {
     if (type === 'unchanged') {
       return `\n${indentBraces}${name}: ${stringify(value, space)}`;
     }
-    
+
     throw new Error(`Unexpected type ${type}`);
   };
 
