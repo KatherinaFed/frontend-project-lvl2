@@ -2,13 +2,13 @@ import path from 'path';
 import fs from 'fs';
 import genDiff from '../src/index.js';
 
-const stylishPath = path.resolve(process.cwd(), '__fixtures__/stylish.txt');
+const stylishPath = path.resolve('__fixtures__/stylish.txt');
 const expectedStylish = fs.readFileSync(stylishPath, 'utf-8');
 
-const plainPath = path.resolve(process.cwd(), '__fixtures__/plain.txt');
+const plainPath = path.resolve('__fixtures__/plain.txt');
 const expectedPlain = fs.readFileSync(plainPath, 'utf-8');
 
-const jsonPath = path.resolve(process.cwd(), '__fixtures__/json.txt');
+const jsonPath = path.resolve('__fixtures__/json.txt');
 const expectedJson = fs.readFileSync(jsonPath, 'utf-8');
 
 // Compare JSON Files

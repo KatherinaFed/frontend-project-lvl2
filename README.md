@@ -6,12 +6,12 @@
 $ make install
 ```
 
-## Run "gendiff <filepath1> <filepath2>
+## Run "gendiff <filepath1> <filepath2>"
 ```sh
 $ gendiff filepath1.(json/yml) filepath2.(json/yml)
 ```
 
-33 Run tests
+## Run tests
 ```sh
 $ make test
 ```
