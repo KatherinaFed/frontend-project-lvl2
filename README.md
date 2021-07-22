@@ -7,13 +7,16 @@ $ make install
 ```
 
 ## Run "gendiff <filepath1> <filepath2>"
+You can use formats: *json*, *plain*, *stylish = (default)*;
 ```sh
 $ gendiff filepath1.(json/yml) filepath2.(json/yml)
+$ gendiff -f <format> filepath1.(json/yml) filepath2.(json/yml)
 ```
 
 ## Run tests
 ```sh
 $ make test
+$ make test-coverage
 ```
 
 ## Examples:
